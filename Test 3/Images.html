@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="US">
+	<head>
+		<title>Images</title>
+		<style>
+			body {
+				background-color: lightgray;
+			}
+			img { width: 100%; }
+		</style>
+	<head>
+
+	<body>
+		<p>You can use images as links with the < a> tag</p>
+		<p align="center"><a href="http://splashgamestudio.com/">
+				<img src="resources/images/sgs.png" alt="Splash Games Studio's Logo" title="SGS Logo" style="width: 128px; height: 128px; border:0">
+			</a>
+		</p>
+		<p>You can add a border and change it to 0 to prevent older browsers from displaying a border around the image</p>
+		<p align="right">Also you can make images with clickable places</p>
+		<samp>Click on the sun or one of the planets to watch them closer:</samp>
+		<br>
+		<img src="resources/images/planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px">
+
+		<map name="planetmap">
+			<area shape="rect" coords="0,0,82,126" alt="Sun" href="resources/images/sun.gif">
+			<area shape="circle" coords="90,58,3" alt="Mercury" href="resources/images/merglobe.gif">
+			<area shape="circle" coords="124,58,8" alt="Venus" href="resources/images/venglobe.gif">
+		</map>
+
+		<p>
+			<img src="resources/images/sgs.png" alt="SGS Logo" style="float:left;width:42px;height:42px">
+			A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.A paragraph with an awesome image floating around it.
+		</p>
+	</body>
+
+</html>
