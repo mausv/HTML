@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang = "EN">
+	<head>
+		<title>Tables</title>
+		<style>
+			body {
+				background-color:darkgray;
+			}
+
+			p {
+				font-family: courier;
+				color: black;
+			}
+			table {
+				width: 100%;
+				border-spacing: 5px;
+			}
+
+			table, th, td{
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			th,td {
+				padding: 5px;
+			}
+
+			th{
+				text-align: left;
+			}
+
+			table#t01 {
+				width:70%;
+				background-color: #f1f1c1;
+			}
+			table#t01 tr:nth-child(even) {
+			    background-color: #eee;
+			}
+			table#t01 tr:nth-child(odd) {
+			    background-color: #fff;
+			}
+			table#t01 th {
+			    color: white;
+			    background-color: black;
+			} 
+		</style>
+	</head>
+
+	<body>
+		<p>
+			<b>tr</b> stands for <em>Table Row</em> and <b>td</b> for <em>Table Data</em>.
+			<br>
+			Border attribute is included in HTML but it's best used with CSS.
+		</p>
+		<hr>
+		<table>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Points</th>
+			</tr>
+			<tr>
+				<td>Jill</td>
+				<td>Smith</td>
+				<td>50</td>
+			</tr>
+			<tr>
+			    <td>Eve</td>
+			    <td>Jackson</td>
+			    <td>94</td>
+			</tr>
+		</table>
+		<hr>
+		<p>You can make the table span many columns with the attribute <b>colspan</b></p>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th colspan="2">Points</th>
+			</tr>
+			<tr>
+				<td>Mauricio Silva</td>
+				<td>103</td>
+				<td>124</td>
+			</tr>
+		</table>
+		<p>You can make the table span many rows with the attribute <b>rowspan</b></p>
+		<table>
+			<tr>
+				<th>Name:</th>
+				<td>Mauricio Silva</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Points:</th>
+				<td>103</td>
+			</tr>
+			<tr>
+				<td>124</td>
+			</tr>
+		</table>
+		<hr>
+		<p>Also, you can add a <em>caption</em> to the table with the <b>< caption></b> tag.</p>
+		<p>The caption tag must be inserted <strong>immediately</strong> after the table tag.</p>
+		<table id="t01">
+			<caption>Monthly savings</caption>
+			<tr>
+				<th>Month</th>
+				<th>Savings</th>
+			</tr>
+			<tr>
+				<td>January</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>February</td>
+				<td>$50</td>
+			</tr>
+		</table>
+	</body>
+</html>
