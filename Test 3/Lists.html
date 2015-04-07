@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang = "EN">
+	<head>
+		<title>Lists</title>
+		<meta charset="UTF-8">
+		<style>
+			body{
+				background-color: lightgray;
+			}
+
+			ul#menu{
+				padding: 0;
+			}
+
+			ul#menu li{
+				display:inline;
+			}
+
+			ul#menu li a{
+				background-color: black;
+			    color: white;
+			    padding: 10px 20px;
+			    text-decoration: none;
+			    border-radius: 4px 4px 0 0;
+			}
+
+			ul#menu li a:hover {
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>Unordered List</h2>
+		<ul style="list-style-type:square">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<hr>
+		<ul style="list-style-type:disc">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<hr>
+		<ul style="list-style-type:none">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<hr>
+		<h2>Ordered List</h2>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		<p>Ordered List Types</p>
+		<ol type="i">
+			<li>1</li>
+			<li>A</li>
+			<li>a</li>
+			<li>I</li>
+			<li>i</li>
+		</ol>
+		<hr>
+		<p>You can add lists inside lists.</p>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea
+				<ul>
+					<li>Black</li>
+					<li>Green
+						<ul>
+							<li>Sweetened</li>
+							<li>Unsweetened</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Milk</li>
+		</ul>
+		<hr>
+		<h2>Description Lists</h2>
+		<dl>
+			<dt>Coffee</dt>
+			<dd>- black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>- white gold drink</dd>
+		</dl>
+		<hr>
+		<h2>Horizontal Lists</h2>
+		<ul id="menu">
+			<li><a href="tables.html">Tables</a></li>
+			<li><a href="../Test 2/CSS.html">CSS</a></li>
+			<li><a href="images.html">Images</a></li>
+		</ul>
+	</body>
+</html>
